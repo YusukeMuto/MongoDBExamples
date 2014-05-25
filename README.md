@@ -22,8 +22,8 @@ MongoDBExamples
  * Sample8.javaで保存したファイルのメタデータとして，MD5ハッシュ値を追加
 * [Sample11.java](https://github.com/t-morita/MongoDBExamples/blob/master/src/Sample11.java)
  * GridFSを用いたファイルの保存
-* [Sample12.java](https://github.com/t-morita/MongoDBExamples/blob/master/src/Sample13.java)
+* [Sample12.java](https://github.com/t-morita/MongoDBExamples/blob/master/src/Sample12.java)
  * Sample11.javaで保存したファイルの取得
-* [Sample13.java](https://github.com/t-morita/MongoDBExamples/blob/master/src/Sample14.java)
+* [Sample13.java](https://github.com/t-morita/MongoDBExamples/blob/master/src/Sample13.java)
  * Sample11.javaで保存したファイルの削除
 
