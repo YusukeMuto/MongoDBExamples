@@ -26,4 +26,5 @@ MongoDBExamples
  * Sample11.javaで保存したファイルの取得
 * [Sample13.java](https://github.com/t-morita/MongoDBExamples/blob/master/src/Sample13.java)
  * Sample11.javaで保存したファイルの削除
-
+* [Sample14.java](https://github.com/t-morita/MongoDBExamples/blob/master/src/Sample14.java)
+ * レプリカセットへのドキュメントの読み書き 
