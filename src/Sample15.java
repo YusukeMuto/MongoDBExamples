@@ -14,12 +14,14 @@ public class Sample15 {
 			// http://docs.mongodb.org/ecosystem/drivers/java-replica-set-semantics/
 			mongoClient.setWriteConcern(WriteConcern.UNACKNOWLEDGED); 
 			System.out.println("Primary Node: " + mongoClient.getReplicaSetStatus().getMaster());
-			mongoClient.setReadPreference(ReadPreference.primaryPreferred());	
-			DB db = mongoClient.getDB("bookstore");
+			//mongoClient.setReadPreference(ReadPreference.primary());	
+			mongoClient.setReadPreference(ReadPreference.secondary());							
+			DB db = mongoClient.getDB("bookstore");			
 			DBCollection c = db.getCollection("books");
 			DBCursor cursor = c.find();
 			while (cursor.hasNext()) {
 				DBObject doc = cursor.next();
+				System.out.println("Server: " + cursor.getServerAddress());
 				System.out.println("title: " + doc.get("title"));
 			}
 		} catch (Exception e) {
